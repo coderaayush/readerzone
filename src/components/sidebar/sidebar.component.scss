@@ -1,0 +1,101 @@
+@import './../../base.scss';
+
+.sidebar-block {
+    background-color: $sidebar-color;
+    color: #fff;
+    padding: 25px;
+    height: 100%;
+
+
+    .app-logo {
+        margin: 30px 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sidebar-body-block {
+
+        .block-item-header {
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            p {
+                padding:0;
+                margin: 0;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 31px;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.27);
+                margin-bottom: 20px;
+            }
+        }
+
+        .block-items-body {
+
+            max-height: 500px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .block-item {
+
+                margin-bottom: 10px;
+                padding: 10px 20px;
+                cursor: pointer;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .heading {
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 31px;
+                    color: #FFFFFF;
+                }
+
+                .sub-heading {
+                    color: #5c64ca;
+                    font-weight: regular;
+                }
+
+                .item-labels {
+                    padding: 0;
+                }
+
+                .doc-item {
+                    margin-top: 3px;
+                }
+
+                &.selected {
+                    background: #172872;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    .sidebar-footer-block {
+
+        position: absolute;
+        bottom: 0;
+
+        .upload-icon {
+            width: 28px;
+            margin: 0 10px;
+        }
+
+        .upload-btn {
+            background-color: #F7B633;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            margin:0 auto;
+            padding: 17px 75px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
